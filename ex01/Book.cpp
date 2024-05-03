@@ -1,9 +1,5 @@
 #include "Book.hpp"
 
-Book::Book(void) : index(-1) {
-
-}
-
 void	Book::info_add(std::string fname, std::string lname, std::string nname, std::string phone, std::string sec){
 
 	index = (index + 1) % 8;

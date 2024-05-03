@@ -9,7 +9,7 @@ class Contact{
 	public:
 		int		index;
 		bool	is_null;
-		Contact();
+		Contact() : index(-1), is_null(false) {};
 		std::string	first_name;
 		std::string	last_name;
 		std::string	nick_name;

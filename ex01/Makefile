@@ -1,7 +1,7 @@
 # Makefile
 
 CPPFLAGS = -Wall -Werror -Wextra -std=c++98
-CPPFILE = main.cpp Book.cpp Contact.cpp
+CPPFILE = main.cpp Book.cpp
 OFILE = $(CPPFILE:.cpp=.o)
 NAME = phonebook
 

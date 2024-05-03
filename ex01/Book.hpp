@@ -14,12 +14,12 @@ class Book{
 	private:
 
 		int		index;
+		Contact	people[8];
 
 		void	info_print(int index);
 	public:
 
-		Contact	people[8];
-		Book(void);
+		Book() : index(-1) {};
 		void	info_add(std::string fname, std::string lname, std::string nname, std::string phone, std::string sec);
 		void	info_serch(std::string cindex);
 		bool	check_nbr(std::string str);
