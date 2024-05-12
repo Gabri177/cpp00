@@ -1,4 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Book.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yugao <yugao@student.42madrid.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/12 22:35:31 by yugao             #+#    #+#             */
+/*   Updated: 2024/05/12 22:35:32 by yugao            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Book.hpp"
+#include <sstream>
+
 
 void	Book::info_add(std::string fname, std::string lname, std::string nname, std::string phone, std::string sec){
 
@@ -34,7 +48,9 @@ std::string truncate(const std::string &str){
 
 void	Book::info_serch(std::string cindex){
 
-	int	index = std::stoi(cindex);
+	std::istringstream iss(cindex);
+	int	index;
+	iss >> index;
 	if (index < 0 || index > 7)
 		std::cout << "Invalid index !" << std::endl;
 	if (people[index].is_null == false)

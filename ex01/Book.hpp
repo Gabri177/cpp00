@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Book.hpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yugao <yugao@student.42madrid.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/12 22:35:34 by yugao             #+#    #+#             */
+/*   Updated: 2024/05/12 22:35:35 by yugao            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef BOOK_HPP
 # define BOOK_HPP
 # include "Contact.hpp"
+# include <string>
 # define FNAME "First Name: "
 # define LNAME "Last Name: "
 # define NNAME "Nick Name: "
